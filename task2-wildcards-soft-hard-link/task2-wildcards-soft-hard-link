@@ -234,3 +234,31 @@
   234  cat softlink.txt
   235  cd ~
   236  history > wildcards_soft_hard_link
+  237  cp wildcards_soft_hard_link ~/linux_practice/
+  238  cd ~/linux_practice
+  239  git add .
+  240  git commit -m "Add wildcards and hard soft link practice"
+  241  git push origin main
+  242  clear
+  243  pwd
+  244  clear
+  245  cd ~
+  246  pwd
+  247  ls
+  248  rmdir wildcars_soft_hard_link
+  249  rmdir wildcards_soft_hard_link
+  250  rm wildcards_soft_hard_links
+  251  rm -r wildcards_soft_hard_link
+  252  ls
+  253  clear
+  254  cd linux_practice
+  255  ls
+  256  cd task1-filesystem-navigation
+  257  ls
+  258  cat linux_commands_history.txt
+  259  cd ..
+  260  cd task2-wildcards-hard-soft-link
+  261  ls
+  262  cd task2-wildcards-soft-hard-link
+  263  ls
+  264  history > task2-wildcards-soft-hard-link
