@@ -1,0 +1,373 @@
+    1  clear
+    2  ls
+    3  pwd
+    4  clear
+    5  pwd
+    6  ls /
+    7  ls -l /
+    8  clear
+    9  cd /etc
+   10  cd ..
+   11  cd /var
+   12  cd home
+   13  clear
+   14  cd /etc
+   15  cd ..
+   16  cd /var
+   17  clear
+   18  cd /etc
+   19  pwd
+   20  cd ..
+   21  cd /var
+   22  pwd
+   23  cd /home
+   24  pwd
+   25  clear
+   26  cd ..
+   27  clear
+   28  ls /bin
+   29  ls /boot
+   30  ls /dev
+   31  ls /proc
+   32  /tmp
+   33  ls /tmp
+   34  clear
+   35  ls /boot
+   36  ls /dev
+   37  ls /proc
+   38  ls /tmp
+   39  clear
+   40  cd /var/log
+   41  pwd
+   42  clear
+   43  cd ..
+   44  clear
+   45  cd /var
+   46  cd /log
+   47  cd log
+   48  clear
+   49  cd ....
+   50  cd ..
+   51  clear
+   52  cd log
+   53  pwd
+   54  clear
+   55  cd /var
+   56  cd log
+   57  pwd
+   58  cd ..
+   59  pwd
+   60  clear
+   61  cd ~
+   62  cd -
+   63  cd ..
+   64  cd .
+   65  clear
+   66  mkdir linux_practice
+   67  cd ~
+   68  clear
+   69  mkdir linux_practice
+   70  cd linux_practice
+   71  pwd
+   72  clear
+   73  touch file1.txt , file2.txt , file.log
+   74  ls
+   75  cd ..
+   76  mkdir dir1 , dir2 , dir3
+   77  pwd
+   78  mkdir dir1 , dir2 , dir3
+   79  ls
+   80  mkdir -p /parent/child/grandchild
+   81  pwd
+   82  ls
+   83  mkdir -p /parent/child/grandchild
+   84  [200~cd ~
+   85  rm -rf linux_practice dir1 dir2 dir3 ','~
+   86  ls
+   87  cd ..
+   88  cd ~
+   89  ls
+   90  pwd
+   91  clear
+   92  cd ubuntu
+   93  ls
+   94  pwd
+   95  clear
+   96  [200~# Step 1: Create and enter directory
+   97  mkdir linux_practice
+   98  cd linux_practice
+   99  # Step 2: Create files (NO commas)
+  100  touch file1.txt file2.txt file3.log
+  101  ls
+  102  # Step 3: Create multiple directories (NO commas)
+  103  mkdir dir1 dir2 dir3
+  104  ls
+  105  # Step 4: Nested directory (NO leading slash)
+  106  mkdir -p parent/child/grandchild
+  107  ls parent/child/
+  108  # Step 5: Remove file
+  109  rm file3.log
+  110  # Step 6: Remove directories
+  111  rmdir dir1
+  112  rm -r dir2
+  113  rm -rf dir3~
+  114  clear
+  115  pwd
+  116  cd ..
+  117  ls
+  118  clear
+  119  cd linux_practice
+  120  touch file1.txt file2.txt file3.log
+  121  ls
+  122  rm -rf dir3 parent
+  123  ls
+  124  mkdir dir1 dir2 dir3
+  125  ls
+  126  mkdir -p parent/child/grandchild
+  127  ls
+  128  ls parent/child/
+  129  rm file3.log
+  130  ls
+  131  rm -r dir1 dir2 dir3
+  132  ls
+  133  rmdir file1.txt file2.txt parent
+  134  rm -r parent
+  135  rm -r file1.txt
+  136  rm -r file2.txt
+  137  ls
+  138  cd ..
+  139  ls
+  140  rmdir linux_practice
+  141  ls
+  142  pwd
+  143  ls
+  144  history
+  145  cd ~
+  146  history > linux_commands_history.txt
+  147  cat linux_commands_history.txt
+  148  sudo apt update
+  149  sudo apt install git -y
+  150  git --version
+  151  git config --global user.name "PriyanshuKaushikSharma"
+  152  git config --global user.name "sauraharyan738@gmail.com"
+  153  cd ~
+  154  pwd
+  155  mkdir linux_practice
+  156  ls
+  157  cd linux_practice
+  158  cp ~/linux_commands_history.txt
+  159  git init
+  160  git add
+  161  git add .
+  162  git commit -m "Add Linux filesystem practice commands"
+  163  git remote add origin https://github.com/PriyanshuKaushikSharma/Linux_practice.git
+  164  git branch -M main
+  165  git push -u origin main
+  166  cd ~/linux_practice
+  167  history > linux_commands_history.txt
+  168  ls
+  169  git add .
+  170  git commit -m "Add linux filesystem pratice commands"
+  171  git config --global user.name "PriyanshuKaushikSharma"
+  172  git config --global user.email "saurabharyan738@gmail.com"
+  173  git push -u origin main
+  174  git status
+  175  git log --online
+  176  git log --oneline
+  177  clear
+  178  cd ..
+  179  ls
+  180  cd ..
+  181  pwd
+  182  cd 
+  183  cd ~
+  184  pwd
+  185  ls
+  186  cd linux practice
+  187  cd linux_practice
+  188  ls
+  189  cd linux_commands_history.txt
+  190  cat linux_commands_history.txt
+  191  clear
+  192  cd ..
+  193  pwd
+  194  clear
+  195  cd ~`
+  196  clear
+  197  cd ~
+  198  mkdir wildcards_practice
+  199  cd wildcards_practice
+  200  touch file1.txt file2.txt file3.txt test1.log test2.log
+  201  ls
+  202  ls *txt
+  203  ls *.log
+  204  ls file?.txt
+  205  ls f?.txt
+  206  ls test?.log
+  207  ls file[1-2].txt
+  208  ls test[1-2].log
+  209  ls
+  210  rm *.log
+  211  ls
+  212  rm *.txt
+  213  ls
+  214  clear
+  215  cd ..
+  216  rmdir wildcards_practice
+  217  clear
+  218  pwd
+  219  cd ~
+  220  echo "Linux practice" > original.txt
+  221  cat original.txt
+  222  ls
+  223  ls -li original.txt
+  224  ln original.txt hardlink.txt
+  225  ls -li original.txt hardlink.txt
+  226  ln -s original.txt softlink.txt
+  227  ls -li original.txt softlink.txt
+  228  cat original.txt
+  229  cat hardlink.txt
+  230  cat softlink.txt
+  231  rm original.txt
+  232  ls -li
+  233  cat hardlink.txt
+  234  cat softlink.txt
+  235  cd ~
+  236  history > wildcards_soft_hard_link
+  237  cp wildcards_soft_hard_link ~/linux_practice/
+  238  cd ~/linux_practice
+  239  git add .
+  240  git commit -m "Add wildcards and hard soft link practice"
+  241  git push origin main
+  242  clear
+  243  pwd
+  244  clear
+  245  history
+  246  cd ~/linux_practice
+  247  ls
+  248  mkdir task1-filesystem-navigation
+  249  ls
+  250  mv linux_commands_history.txt task1-filesystem-navigation
+  251  mkdir task2-wildcards-soft-hard-link
+  252  history > task2-wildcardslinks/commands.txt
+  253  ls
+  254  rm wildcards_soft_hard_link
+  255  ls
+  256  cat task1-filesystem-navigation
+  257  cd ~
+  258  pwd
+  259  ls
+  260  rmdir wildcars_soft_hard_link
+  261  rmdir wildcards_soft_hard_link
+  262  rm wildcards_soft_hard_links
+  263  rm -r wildcards_soft_hard_link
+  264  ls
+  265  clear
+  266  cd linux_practice
+  267  ls
+  268  cd task1-filesystem-navigation
+  269  ls
+  270  cat linux_commands_history.txt
+  271  cd ..
+  272  cd task2-wildcards-hard-soft-link
+  273  ls
+  274  cd task2-wildcards-soft-hard-link
+  275  ls
+  276  history > task2-wildcards-soft-hard-link
+  277  ls
+  278  cat task2-wildcards-soft-hard-link
+  279  clear
+  280  cd ~
+  281  ls
+  282  cd linux_practice
+  283  ls
+  284  cat >
+  285  git add .
+  286  git commit -m "Organize repo structure with task folders and Readme"
+  287  git push origin main
+  288  git pull origin main --rebase
+  289  git push origin main
+  290  git status
+  291  clear
+  292  ls
+  293  cat readme.md
+  294  vim readme.md
+  295  clear
+  296  cd .
+  297  cd ~
+  298  ls
+  299  cd linux_commands_history.txt
+  300  cat linux_commands_history.txt
+  301  rm linux_commands_history.txt
+  302  ls
+  303  rm ,
+  304  rmdir ,
+  305  ls
+  306  cat softlink.txt
+  307  cat hardlink.txt
+  308  clear
+  309  ls
+  310  rm -r hardlink.txt softlink.txt
+  311  ls
+  312  clear
+  313  ls
+  314  cd linux_practice
+  315  ls
+  316  rm readme.md
+  317  ls
+  318  clear
+  319  ls
+  320  mkdir task3-find-locate-copy
+  321  ls
+  322  cd ~
+  323  ls
+  324  mkdir -p find_practice/dir1
+  325  mkdir -p find_practice/dir2
+  326  touch find_practice/file1.txt
+  327  touch find_practice/dir1/file2.txt
+  328  touch find_practice/dir2/file3.txt
+  329  touch find_practice/dir2/file3.log
+  330  ls find_practice
+  331  ls find_practice/dir1/
+  332  ls find_practice/dir2/
+  333  ls
+  334  cd find_practice
+  335  ls
+  336  find find_practice -file3.txt
+  337  find find_practice -name "*txt"
+  338  find find_practice file3.txt
+  339  find find_practice dir1
+  340  cd ~
+  341  ls
+  342  find find_practice dir2
+  343  clear
+  344  ls
+  345  cd find_practice
+  346  ls
+  347  cd ~
+  348  find find_practice -name "*.txt"
+  349  find find_practice -type f -name "*.txt"
+  350  find find_practice -type f -name "*.log"
+  351  sudo updatedb
+  352  locate file1.txt
+  353  sudo apt install plocate -y
+  354  clear
+  355  ls
+  356  sudo apt install plocate -y
+  357  sudo updatedb
+  358  locate file1.txt
+  359  locate file3.log
+  360  locate file2.txt
+  361  cp find_practice/file1.txt find_practice/dir1/
+  362  cp find_practice/dir1/file2.txt find_practice/dir2/
+  363  ls find_practice/dir1/
+  364  ls find_practice/dir2/
+  365  cp -r find_practice backup_find_practice
+  366  ls backup_find_practice
+  367  ls backup_find_practice/dir1
+  368  ls backup_find_practice/dir2
+  369  history
+  370  clear
+  371  ls
+  372  cd ~
+  373  history > find_locate_copy_commands.txt
