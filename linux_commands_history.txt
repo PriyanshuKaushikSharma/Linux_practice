@@ -1,0 +1,167 @@
+    1  clear
+    2  ls
+    3  pwd
+    4  clear
+    5  pwd
+    6  ls /
+    7  ls -l /
+    8  clear
+    9  cd /etc
+   10  cd ..
+   11  cd /var
+   12  cd home
+   13  clear
+   14  cd /etc
+   15  cd ..
+   16  cd /var
+   17  clear
+   18  cd /etc
+   19  pwd
+   20  cd ..
+   21  cd /var
+   22  pwd
+   23  cd /home
+   24  pwd
+   25  clear
+   26  cd ..
+   27  clear
+   28  ls /bin
+   29  ls /boot
+   30  ls /dev
+   31  ls /proc
+   32  /tmp
+   33  ls /tmp
+   34  clear
+   35  ls /boot
+   36  ls /dev
+   37  ls /proc
+   38  ls /tmp
+   39  clear
+   40  cd /var/log
+   41  pwd
+   42  clear
+   43  cd ..
+   44  clear
+   45  cd /var
+   46  cd /log
+   47  cd log
+   48  clear
+   49  cd ....
+   50  cd ..
+   51  clear
+   52  cd log
+   53  pwd
+   54  clear
+   55  cd /var
+   56  cd log
+   57  pwd
+   58  cd ..
+   59  pwd
+   60  clear
+   61  cd ~
+   62  cd -
+   63  cd ..
+   64  cd .
+   65  clear
+   66  mkdir linux_practice
+   67  cd ~
+   68  clear
+   69  mkdir linux_practice
+   70  cd linux_practice
+   71  pwd
+   72  clear
+   73  touch file1.txt , file2.txt , file.log
+   74  ls
+   75  cd ..
+   76  mkdir dir1 , dir2 , dir3
+   77  pwd
+   78  mkdir dir1 , dir2 , dir3
+   79  ls
+   80  mkdir -p /parent/child/grandchild
+   81  pwd
+   82  ls
+   83  mkdir -p /parent/child/grandchild
+   84  [200~cd ~
+   85  rm -rf linux_practice dir1 dir2 dir3 ','~
+   86  ls
+   87  cd ..
+   88  cd ~
+   89  ls
+   90  pwd
+   91  clear
+   92  cd ubuntu
+   93  ls
+   94  pwd
+   95  clear
+   96  [200~# Step 1: Create and enter directory
+   97  mkdir linux_practice
+   98  cd linux_practice
+   99  # Step 2: Create files (NO commas)
+  100  touch file1.txt file2.txt file3.log
+  101  ls
+  102  # Step 3: Create multiple directories (NO commas)
+  103  mkdir dir1 dir2 dir3
+  104  ls
+  105  # Step 4: Nested directory (NO leading slash)
+  106  mkdir -p parent/child/grandchild
+  107  ls parent/child/
+  108  # Step 5: Remove file
+  109  rm file3.log
+  110  # Step 6: Remove directories
+  111  rmdir dir1
+  112  rm -r dir2
+  113  rm -rf dir3~
+  114  clear
+  115  pwd
+  116  cd ..
+  117  ls
+  118  clear
+  119  cd linux_practice
+  120  touch file1.txt file2.txt file3.log
+  121  ls
+  122  rm -rf dir3 parent
+  123  ls
+  124  mkdir dir1 dir2 dir3
+  125  ls
+  126  mkdir -p parent/child/grandchild
+  127  ls
+  128  ls parent/child/
+  129  rm file3.log
+  130  ls
+  131  rm -r dir1 dir2 dir3
+  132  ls
+  133  rmdir file1.txt file2.txt parent
+  134  rm -r parent
+  135  rm -r file1.txt
+  136  rm -r file2.txt
+  137  ls
+  138  cd ..
+  139  ls
+  140  rmdir linux_practice
+  141  ls
+  142  pwd
+  143  ls
+  144  history
+  145  cd ~
+  146  history > linux_commands_history.txt
+  147  cat linux_commands_history.txt
+  148  sudo apt update
+  149  sudo apt install git -y
+  150  git --version
+  151  git config --global user.name "PriyanshuKaushikSharma"
+  152  git config --global user.name "sauraharyan738@gmail.com"
+  153  cd ~
+  154  pwd
+  155  mkdir linux_practice
+  156  ls
+  157  cd linux_practice
+  158  cp ~/linux_commands_history.txt
+  159  git init
+  160  git add
+  161  git add .
+  162  git commit -m "Add Linux filesystem practice commands"
+  163  git remote add origin https://github.com/PriyanshuKaushikSharma/Linux_practice.git
+  164  git branch -M main
+  165  git push -u origin main
+  166  cd ~/linux_practice
+  167  history > linux_commands_history.txt
